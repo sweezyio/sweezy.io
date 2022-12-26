@@ -1,0 +1,2 @@
+# Personal Website
+A newer, simpler personal website that follows [Brutalist Web Design Guidelines](https://brutalist-web.design/). Furthermore, it aims to have a similar structure to [Sive.rs](https://sive.rs) (with easy to remember urls for each article, hence the nonstandard folder structure).
