@@ -1,18 +1,128 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Blake</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake Sweezy</title>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Overall Page Settings */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Raleway', sans-serif;
+            color: lightgray;
+        }
+
+        /* Background Effect */
+        .background {
+            position: fixed;
+            top: -1000%;
+            left: -1000%;
+            right: 10%;
+            bottom: 0;
+            width: 10000%;
+            height: 10000%;
+            background: linear-gradient(45deg, rgb(11, 11, 123), rgb(68, 2, 90));
+            background-size: 1000% 1000%;
+            animation: gradientShift 25s ease infinite;
+            filter: blur(1000px);
+            z-index: -1;
+        }
+
+        /* Color Change Animation */
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+	    opacity: 75%;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1;
+	    color: black;
+        }
+
+        .card img {
+            border-radius: 100%;
+            height: 18rem;
+            width: 18rem;
+            border: 2px solid #f0f0f0;
+	    margin-bottom: 3%;
+        }
+	
+	.card h1 {
+		font-family: "Raleway", sans-serif;
+		font-size: xx-large;
+	}
+
+	.card h2 {
+		font-family: "PT Sans", sans-serif; 
+		color: rgb(57, 56, 56);
+		font-size: large;
+	}
+
+        /* Icon Links */
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: gray;
+            font-size: 1rem; /* Adjust size of icons */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons svg {
+            width: 28px; /* Control the size of SVG icons */
+            height: 28px;
+        }
+
+        .social-icons a:hover {
+            color: black;
+        }
+
+    </style>
 </head>
-<body style="background: black; color: lightgray">
-<article class="pa5-ns code">
-    <h1>Blake Sweezy</h1>
-    <a href="socials" class="link underline light-gray hover-white">Socials</a>
-    <a href="writings" class="link underline light-gray hover-white">Writings</a>
-    <p class="measure lh-copy">
-        A queer, 21-year-old student currently attending university for computer science.
-    </p>
-    <p class="measure lh-copy">
-        See what I'm working on <a href="now" class="link underline light-gray hover-white">now</a>.
-    </p>
-</article>
+<body>
+    <!-- Background Layer -->
+    <div class="background"></div>
+
+    <!-- Content Card -->
+    <article class="card">
+        <div class="tc">
+            <img src="./img/headshot.jpg" alt="Photo of Blake Sweezy">
+            <h1 class="f3 mb2">Blake Sweezy</h1>
+            <h2 class="f5 fw4 gray mt0">Production Manager | Lighting Designer</h2>
+	    <div class="social-icons">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </a>
+                <a href="mailto:your-email@example.com" aria-label="Email">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
+                </a>
+            </div>
+	</div>
+    </article>
 </body>
+</html>
